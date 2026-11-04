@@ -166,8 +166,8 @@ async def raffle(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def join(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
+    
+   
 
     raffle_id = int(query.data.split(":")[1])
     user = query.from_user
